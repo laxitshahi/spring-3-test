@@ -1,0 +1,11 @@
+version: '3.8'
+
+# If you have a local postgres, you dont need docker
+services:
+  db:
+    image: postgres:alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: password
